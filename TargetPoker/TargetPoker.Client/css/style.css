@@ -108,7 +108,7 @@ p {
 header {
 	position: relative;
 	height:230px;
-	background:url(../images/Royal_Flush.jpg) no-repeat right bottom;
+	/*background:url(../images/Royal_Flush.jpg) no-repeat right bottom;*/
 }
 
 section#content {

@@ -40,11 +40,11 @@
             <nav>
                 <ul class="menu">
                     <li id="left"><a class="act" href="#">home page</a></li>
-                    <li><a href="#">poker rooms</a></li>
-                    <li><a href="#">strategy</a></li>
-                    <li><a href="#">video</a></li>
-                    <li><a href="#">poker stars</a></li>
-                    <li id="right"><a href="#">contacts</a></li>
+                    <li><a href="#">como jogar</a></li>
+                    <li><a href="#">target team</a></li>
+                    <li><a href="#">galeria</a></li>
+                    <li><a href="#">eventos</a></li>
+                    <li id="right"><a href="#">contato</a></li>
                 </ul>
             </nav>
             <div id="loopedCarousel">
@@ -52,52 +52,34 @@
                     <div class="slides">
                         <div>
                             <a href="#">
-                                <img src="images/carousel_img1.png" width="316" height="303"></a> <i><span class="s1">Tips<br>
-                                    <b>&amp; Hints</b></span><a href="#">More</a></i>
+                                <img src="images/carousel_img3.png" width="316" height="303"></a> <i><span class="s3">Como<br>
+                                    <b>Jogar</b></span><a href="#">Veja +</a></i>
                         </div>
                         <div>
                             <a href="#">
-                                <img src="images/carousel_img2.png" width="316" height="303"></a> <i><span class="s2">Free<br>
-                                    <small>games download</small></span><a href="#">More</a></i>
+                                <img src="images/carousel_img1.png" width="316" height="303"></a> <i><span class="s1">Dicas<br>
+                                    <b>e Estratégias</b></span><a href="#">Veja +</a></i>
                         </div>
                         <div>
                             <a href="#">
-                                <img src="images/carousel_img3.png" width="316" height="303"></a> <i><span class="s3">Payout<br>
-                                    <b>Guarantee</b></span><a href="#">More</a></i>
-                        </div>
-
-                        <div>
-                            <a href="#">
-                                <img src="images/carousel_img2.png" width="316" height="303"></a> <i><span class="s2">Free<br>
-                                    <small>games download</small></span><a href="#">More</a></i>
+                                <img src="images/carousel_img2.png" width="316" height="303"></a> <i><span class="s2">O que é<br>
+                                    <small>Texas Hold'em</small></span><a href="#">Veja +</a></i>
                         </div>
                         <div>
                             <a href="#">
-                                <img src="images/carousel_img3.png" width="316" height="303"></a> <i><span class="s3">Payout<br>
-                                    <b>Guarantee</b></span><a href="#">More</a></i>
+                                <img src="images/carousel_img2.png" width="316" height="303"></a> <i><span class="s2">Nossos<br>
+                                    <small>Jogadores</small></span><a href="#">Veja +</a></i>
                         </div>
                         <div>
                             <a href="#">
-                                <img src="images/carousel_img1.png" width="316" height="303"></a> <i><span class="s1">Tips<br>
-                                    <b>&amp; Hints</b></span><a href="#">More</a></i>
-                        </div>
-
-
-                        <div>
-                            <a href="#">
-                                <img src="images/carousel_img3.png" width="316" height="303"></a> <i><span class="s3">Payout<br>
-                                    <b>Guarantee</b></span><a href="#">More</a></i>
+                                <img src="images/carousel_img3.png" width="316" height="303"></a> <i><span class="s3">Sit 'n Go<br>
+                                    <b>e Torneios</b></span><a href="#">Veja +</a></i>
                         </div>
                         <div>
                             <a href="#">
-                                <img src="images/carousel_img1.png" width="316" height="303"></a> <i><span class="s1">Tips<br>
-                                    <b>&amp; Hints</b></span><a href="#">More</a></i>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="images/carousel_img2.png" width="316" height="303"></a> <i><span class="s2">Free<br>
-                                    <small>games download</small></span><a href="#">More</a></i>
-                        </div>
+                                <img src="images/carousel_img1.png" width="316" height="303"></a> <i><span class="s1">Nossos<br>
+                                    <b>Parceiros</b></span><a href="#">Veja +</a></i>
+                        </div>                        
                     </div>
                 </div>
                 <a href="#" class="previous"></a><a href="#" class="next"></a>
@@ -107,7 +89,7 @@
                 <div class="wrapper">
                     <div id="indent">
                         <article class="col-1">
-                            <h2>Events</h2>
+                            <h2>Eventos</h2>
                             <div class="inner">
                                 <span class="button">12/10</span>
                                 <p>At nequ eget nisus leo vel nean necoulum ante ipsum prin faucibus oposuere cubind isse sollicitu din velit sed l pharetr.</p>
@@ -117,11 +99,11 @@
                                     Proulum ante ipsum prin faucibus posuere cubind isse sollicitu din velit sed l pharetr.
               a augue c aug elit magdre.
                                 </p>
-                                <a href="#" class="link">Read more</a>
+                                <a href="#" class="link">Leia +</a>
                             </div>
                         </article>
                         <article class="col-2">
-                            <h2 class="h-indent">Welcome</h2>
+                            <h2 class="h-indent">Seja bem vindo!</h2>
                             <div class="inner2">
                                 <h6>At nequ eget nisus leo vel neecoulum ante ipsum prin faucibus oposue.</h6>
                                 <p>At nequ eget nisus leo vel nean necoulum ante ipsum prin faucibus oposuere cubind isse sollicitu din velit sed l pharetr.unt ac viverra selorta diam eim velit. Fusc ismod consequat ante.</p>
@@ -129,7 +111,7 @@
                             </div>
                         </article>
                         <article class="col-3">
-                            <h2 class="h-indent2">Club Rating</h2>
+                            <h2 class="h-indent2">Ranking</h2>
                             <div class="inner3">
                                 <ul class="list-1">
                                     <li><span>
@@ -145,7 +127,7 @@
                                     <li class="extra"><span>
                                         <img src="images/star_full.png" /><img src="images/star_full.png" /><img src="images/star_full.png" /><img src="images/star_full.png" /><img src="images/star_empty.png" /></span><strong>Jessica Priston</strong></li>
                                 </ul>
-                                <a href="#" class="link">All members</a>
+                                <a href="#" class="link">Todos os jogadores</a>
                             </div>
                         </article>
                     </div>
