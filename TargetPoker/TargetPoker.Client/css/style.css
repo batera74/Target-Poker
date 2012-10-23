@@ -1,0 +1,830 @@
+/* =================== Getting the new tags to behave START ====================== */
+
+article, aside, audio, canvas, command, datalist, details, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video { display: block; }
+mark, rp, rt, ruby, summary, time { display: inline }
+
+/* ==================== Getting the new tags to behave END ======================= */
+
+
+
+
+
+/* ========================= Global properties START ============================= */
+
+body {
+	background: #041c0e url(../images/back1.jpg) repeat-x center top;    
+	min-width: 1118px;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1em;
+	color: #393939;
+}
+
+html {
+	background: transparent;
+	min-width: 1118px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	vertical-align: top;
+	font-size: 100%;
+}
+
+div {
+	border: 0 none;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: top;
+}
+
+a {
+	outline: none;
+	color: #fff;
+}
+
+	a:hover {
+		text-decoration: none;
+	}
+h2 { 
+	font-size:3.334em;
+	line-height:42px;
+	color:#fff;
+	border-bottom:3px solid #1e3829;
+	padding:0 0 10px 10px;
+	margin:0 17px 24px 0;
+}
+h2.extra { 
+	font-size:3.334em;
+	line-height:42px;
+	color:#fff;
+	padding:0 0 12px 22px;
+	margin:0 0 30px 0;
+}
+h5 {
+	font-size:1.334em;
+	line-height:18px;
+	font-weight:normal;
+	color:#fff;
+	margin:0;
+}
+h6 {
+	font-size:1.334em;
+	line-height:18px;
+	font-weight:normal;
+	color:#fff;
+	margin:0 0 24px 0;
+}
+.line-small {
+	background:url(../images/line.gif) repeat-x left;
+	height:1px;
+	width:100%;
+	margin:0 0 15px 0;
+}
+p {
+	font-size:1.167em;
+	line-height:18px;
+	color:#61766a;
+	margin:0 0 18px 0;
+}
+/* ========================= Global properties END =============================== */
+
+
+
+
+
+
+/* ========================= Global Structure START ============================== */
+
+#main {
+	width: 960px;
+	margin: 0 auto;
+	font-size: 0.75em;
+}
+
+header {
+	position: relative;
+	height:230px;
+	background:url(../images/Royal_Flush.jpg) no-repeat right bottom;
+}
+
+section#content {
+	
+}
+
+footer {
+	height: 181px;
+	overflow: hidden;
+	border-top:3px solid #1e3427;
+	margin:0 5px;
+	padding:45px 0 0 0;
+	text-align:center;
+}
+
+/* ========================= Global Structure END ================================ */
+
+
+
+
+
+
+/* ====================== Left & Right alignment START =========================== */
+
+.fleft {
+	float: left;
+}
+
+.fright {
+	float: right;
+}
+
+.col-1, .col-2, .col-3, .col-4 {
+	float: left;
+	overflow: hidden;
+}
+
+.block-1, .block-2, .block-3, .block-4 {
+	float: left;
+	overflow: hidden;
+}
+
+.aligncenter {
+	padding: 15px 0 0 0;
+	text-align: center;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.clear {
+	clear: both;
+	font-size: 0%;
+	line-height: 0%;
+	height: 0;
+}
+
+/* ====================== Left & Right alignment END ============================= */
+
+
+
+
+
+/* ============================== header START =================================== */
+
+h1 {
+	position: absolute;
+	top: 5px;
+	left: -15px;
+	
+}
+	h1 a { 
+		display:block;
+		background:url(../images/logo.png) no-repeat;
+		height:283px;
+		width:400px;
+	}
+		h1 a span {
+			display:none;
+		}
+
+nav ul.menu {
+	position: relative;
+	padding:0 0 26px 0;
+	width:100%;
+	overflow:hidden;
+}
+	nav ul.menu li {
+		float:left;
+		overflow:hidden;
+		background:url(../images/menu_bg_tail.gif) repeat-x;
+		border-right:1px solid #15201a;
+	}
+	nav ul.menu li#left {
+		background:url(../images/menu_bg_left.png) no-repeat left;
+		
+	}
+	nav ul.menu li#right {
+		background:url(../images/menu_bg_right.png) no-repeat right;
+		margin:0 !important;
+	}
+		nav ul.menu li a {
+			display:block;
+			height:82px;
+			width:159px;
+			text-align:center;
+			color:#fff;
+			font-size:1.417em;
+			line-height:78px;
+			text-transform:uppercase;
+			text-decoration:none;
+		}
+		nav ul.menu li a:hover, a.act {
+			background:#aa2813;
+		}
+		nav ul.menu li#left a:hover {
+			background:url(../images/menu_bg_left_act.png) no-repeat left;
+		}
+		nav ul.menu li#left a.act {
+			background:url(../images/menu_bg_left_act.png) no-repeat left;
+		}
+		nav ul.menu li#right a:hover {
+			background:url(../images/menu_bg_right_act.png) no-repeat right;
+		}
+		nav ul.menu li#right a.act {
+			background:url(../images/menu_bg_right_act.png) no-repeat right;
+		}
+
+/* =============================== header END ==================================== */
+
+
+/* ============================= carousel START =================================== */
+.container {
+	height:403px; 
+	overflow:hidden; 
+	position:relative; 
+	width:960px !important;
+}
+.slides {
+	position:absolute; 
+	top:0; 
+	left:0;
+}
+.slides div {
+	position:absolute; 
+	top:0; 
+	width:316px; 
+	height:394px; 
+	display:none;
+}
+.slides div img {
+		margin:0 0 7px 0;
+	}
+	.slides div i {
+		display:block;
+		font-style:normal;
+		width:316px;
+		height:93px;
+		background:url(../images/carousel_bot.png) no-repeat;
+	}
+		.slides div i span {
+			float:left;
+			color:#fff;
+		}
+		.s1 {
+			padding:11px 0 0 20px;
+			font-size:2.5em;
+			line-height:1.2em;
+		}
+			.s1 b {
+				display:block;
+				margin:-6px 0 0 0;
+				font-weight:normal;
+			}
+		.s2 {
+			padding:8px 0 0 20px;
+			font-size:3.334em;
+			line-height:1.2em;
+		}
+			.s2 small {
+				font-size:0.5em;
+				line-height:22px;
+				margin:-7px 0 0 0;
+				display:block;
+			}
+		.s3 {
+			padding:11px 0 0 20px;
+			font-size:2.5em;
+			line-height:1.2em;
+		}
+			.s3 b {
+				display:block;
+				margin:-6px 0 0 0;
+				font-weight:normal;
+			}
+		.slides div i a {
+			float:right;
+			margin:23px 25px 0 0;
+			background:url(../images/button.png) no-repeat;
+			text-align:center;
+			text-decoration:none;
+			font-size:2em;
+			line-height:43px;
+			padding:0 26px;
+			color:#fff;
+		}
+		.slides div i a:hover {
+			color:#000;
+		}
+#loopedCarousel { 
+	width:960px; 
+	position:relative; 
+	clear:both;
+}
+#loopedCarousel .previous {
+	position:absolute;
+	top:103px;
+	left:-79px;
+	background:url(../images/arrow_left.png) no-repeat;
+	height:80px;
+	width:49px;
+	border:none;
+	cursor:pointer;
+}
+#loopedCarousel .previous:hover {
+	background:url(../images/arrow_left_act.png) no-repeat;
+}
+#loopedCarousel .next {
+	position:absolute;
+	top:103px;
+	right:-79px;
+	background:url(../images/arrow_right.png) no-repeat;
+	height:80px;
+	width:49px;
+	border:none;
+	cursor:pointer;
+}
+#loopedCarousel .next:hover {
+	background:url(../images/arrow_right_act.png) no-repeat;
+}
+/* ============================= carousel END =================================== */
+
+
+/* ============================= content START =================================== */
+#indent {
+	padding:61px 0 50px 0;
+	overflow:hidden;
+}
+#page2 #indent {
+	padding:61px 0 46px 0;
+	overflow:hidden;
+}
+#page4 #indent {
+	padding:61px 0 68px 0;
+	overflow:hidden;
+}
+#page5 #indent {
+	padding:61px 0 34px 0;
+	overflow:hidden;
+}
+#page6 #indent {
+	padding:61px 0 61px 0;
+	overflow:hidden;
+}
+#page7 #indent {
+	padding:61px 0 64px 0;
+	overflow:hidden;
+}
+.inner {
+	padding:0 20px 0 10px;
+}
+.inner2 {
+	padding:0 20px 0 12px;
+}
+.inner3 {
+	padding:0 20px 0 15px;
+}
+.inner4 {
+	padding:0 20px 0 8px;
+}
+.inner5 {
+	padding:0 20px 0 23px;
+}
+ul.list-1 {
+	padding:0 0 22px 0;
+}
+	ul.list-1 li {
+		width:100%;
+		overflow:hidden;
+		border-bottom:1px solid #1e3829;
+	}
+	ul.list-1 li.extra {
+		border:none;
+	}
+		ul.list-1 li span {
+			display:inline-block;
+			padding:12px 21px 0 0;
+			height:25px;
+			
+		}
+			ul.list-1 li span img {
+				float:left;
+				padding:0 1px 0 0;
+			}
+		ul.list-1 li strong {
+			display:inline-block;
+			font-size:1.167em;
+			line-height:37px;
+			text-transform:uppercase;
+			font-weight:normal;
+			color:#fff;
+		}
+table.price {
+	width:585px;
+	border:none;
+}
+	.price tr.extra td {
+		font-size:1.167em;
+		line-height:29px;
+		text-transform:uppercase;
+		color:#fff;
+	}
+	.price td {
+		font-size:1.167em;
+		line-height:38px;
+		color:#61766a;
+		border-bottom:1px solid #1e3929;
+		border-right:1px solid #1e3929;
+	}
+	.price td.first {
+		width:187px;
+	}
+	.price td.two {
+		padding:0 0 0 20px;
+		width:119px;
+	}
+	.price td.three {
+		padding:0 0 0 22px;
+		width:137px;
+	}
+	.price td.four {
+		padding:0 0 0 20px;
+		border-right:none;
+	}
+	.price td.extra1 {
+		padding:0 0 0 20px;
+	}
+	.price td.extra2 {
+		padding:0 0 0 48px;
+	}
+	.price td.extra3 {
+		padding:0 0 0 17px;
+		border-right:none;
+	}
+	.price td a {
+		font-size:1em;
+		line-height:32px;
+		font-style:italic;
+		color:#cdff00;
+	}
+ul.list-2 {
+	padding:0 0 5px 0;
+}
+	ul.list-2 li {
+		width:100%;
+		overflow:hidden;
+		background:url(../images/marker_li.gif) no-repeat left center;
+		padding:0 0 0 17px; 
+	}
+		ul.list-2 li a {
+			text-decoration:none;
+			font-size:1.167em;
+			line-height:28px;
+			color:#fff;
+		}
+			ul.list-2 li a:hover {
+				text-decoration:underline;
+			}
+.page {
+	width:326px;
+}
+ul.pages {
+	margin:0 auto;
+	overflow:hidden;
+	padding:0 0 0 14px;
+	width:96px;
+}
+	ul.pages li {
+	float:left;
+	padding:0 8px 0 0;
+	}
+		ul.pages li a {
+			text-decoration:none;
+			line-height:18px;
+			font-size:1.167em;
+			color:#61766a;
+		}
+		ul.pages li a:hover, ul.pages li a.act2 {
+			text-decoration:underline;
+			color:#fff;
+		}
+#previous {
+	float: left;
+	font-size: 1.167em;
+	line-height:18px;
+	font-style:italic;
+	color: #fff;
+}
+
+#next {
+	float:right;
+	font-size: 1.167em;
+	line-height:18px;
+	font-style:italic;
+	color: #fff;
+}
+ul.list-3 {
+	overflow:hidden;
+}
+	ul.list-3 li {
+		width:100%;
+		overflow:hidden;
+		padding:0 0 35px 0;
+	}
+		ul.list-3 li img {
+			float:left;
+			margin:0 23px 0 1px;
+		}
+		ul.list-3 li strong {
+			font-size:1.334em;
+			line-height:17px;
+			font-weight:normal;
+			color:#fff;
+		}
+		ul.list-3 li p {
+			margin:0 !important;
+		}
+.phone {
+	display:block;
+	font-size:1.167em;
+	line-height:18px;
+	color:#61766a;
+	padding:0 0 33px 0;
+}
+	.phone small {
+		float:right;
+		padding:0 99px 0 0;
+		font-size:inherit;
+		line-height:18px;
+	}
+		.phone small a {
+			text-decoration:none;
+		}
+		.phone small a:hover {
+			text-decoration:underline;
+		}
+dl.list-1 {
+	padding:0 0 10px 0;
+}
+	dl.list-1 dt {
+		font-size:1.167em;
+		line-height:18px;
+		color:#fff;
+	}
+/* ============================== content END ==================================== */
+
+/* ============================= JS video START ===================================== */
+
+	.clearfix:after {
+	    content: "."; 
+	    display: block; 
+	    height: 0; 
+	    clear: both; 
+	    visibility: hidden;
+	}
+
+	.clearfix {display: inline-block;}
+
+	/* Hides from IE-mac \*/
+	* html .clearfix {height: 1%;}
+	.clearfix {display: block;}
+	/* End hide from IE-mac */
+	
+	.gallery {
+		width: 100%;
+		margin: 0 0 33px 0;
+	} 
+	
+		.gallery li {
+			position: relative;
+			padding: 0 29px 0 0;
+			float:left;
+		}
+		.gallery li.extra {
+			padding:0;
+		}
+		
+			.gallery li a {
+				background: url(../images/play.png) no-repeat 0% 0%;
+				display: block;
+				width: 286px;
+				height: 205px;
+				overflow: hidden;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+				.gallery li a:hover {
+					background-position: 0% -206px;
+				}
+	
+
+/* ============================== JS video END ====================================== */
+
+
+/* =================== txt, links, lines, titles START =========================== */
+.button {
+	display:inline-block;
+	background:#cdff00;
+	padding:0 16px 0 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior:url(js/PIE.htc);
+ 	position:relative;
+	font-size:1.334em;
+	line-height:26px;
+	color:#000;
+	margin:0 0 10px 0;
+}
+.link {
+	font-size:1.167em;
+	line-height:16px;
+	font-style:italic;
+	color:#fff;
+}
+.link2 {
+	font-size:1.167em;
+	line-height:18px;
+	color:#fff;
+	text-decoration:none;
+}
+	.link2:hover {
+		text-decoration:underline;
+	}
+
+
+/* ==================== txt, links, lines, titles END ============================ */
+
+
+
+
+
+/* ============================= forms START ===================================== */
+.button_contact {
+	text-align:right;
+}
+#contacts-form {
+	padding:5px 0 0 0;
+}
+#contacts-form fieldset {
+	border:none;
+}
+	#contacts-form label { 
+		display:block;
+		height:41px;
+		background:url(../images/input_bg.png) no-repeat left top;
+		padding:0 0 6px 0;
+	} 
+		#contacts-form label input { 
+			width:228px;
+			height:26px;
+			padding:10px 18px 5px 18px;
+			color:#61766a;
+			border:none;
+			background:none;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:1.333em;
+			line-height:18px;
+		}
+		#contacts-form textarea {
+			width:228px;
+			height:91px;
+			padding:8px 18px 5px 18px;
+			color:#61766a;
+			overflow:auto;
+			border:none;
+			background:none;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:1.333em;
+			line-height:18px;
+		}
+		#contacts-form .textarea-box {
+			background:url(../images/textarea_bg.png) no-repeat left top;
+			height:110px;
+			margin:0 0 28px 0;
+			overflow:hidden;
+		}
+		#contacts-form a {
+				line-height:32px;
+				font-size:1.167em;
+				color:#cdff00 !important;
+				text-align:center;
+				font-style:italic;
+				padding:0;
+				text-decoration:underline;
+				
+			}
+		.send {
+			margin:0 10px 0 20px;
+		}
+		#contacts-form a:hover {
+			text-decoration:none;
+		}
+
+/* ============================== forms END ====================================== */
+
+
+
+
+
+/* ============================= other START ===================================== */
+
+.pic-indent {
+	float:left;
+	margin: 3px 25px 0 0;
+}
+.p-indent {
+	margin:0 0 33px 0;
+}
+.p-indent1 {
+	margin:0 0 11px 0;
+}
+.p-indent2 {
+	margin:0 0 22px 0;
+}
+.p-indent3 {
+	margin:0 0 25px 0;
+}
+.h-indent {
+	margin:0 10px 30px 5px !important;
+}
+.h-indent2 {
+	margin:0 10px 21px 5px;
+}
+.h-indent3 {
+	margin:0 10px 32px 5px;
+}
+.h-indent4 {
+	margin:0 10px 34px 5px;
+}
+.h-indent5 {
+	margin:0 10px 27px 5px;
+}
+
+/* ============================== other END ====================================== */
+
+
+
+
+
+/* ============================ footer START ===================================== */
+
+footer strong {
+	display:block;
+	 font-size:0.917em;
+	 line-height:13px;
+	 text-transform:uppercase;
+	 font-weight:normal;
+	 color:#fff;
+	 padding:0 0 18px 0;
+}
+	footer strong a {
+		color:#fff;
+		text-decoration:none;
+	}
+	footer strong a:hover {
+		text-decoration:underline;
+	}
+footer i {
+	display:block;
+	padding:0 0 22px 0;
+}
+	footer i a {
+		display:inline-block;
+		height:32px;
+		width:32px;
+		margin:0 4px 0 2px;
+	}
+		footer i a.soc-1 {
+			background:url(../images/social_1.jpg) no-repeat;
+		}
+		footer i a.soc-2 {
+			background:url(../images/social_2.jpg) no-repeat;
+		}
+		footer i a.soc-3 {
+			background:url(../images/social_3.jpg) no-repeat;
+		}
+		footer i a:hover.soc-1 {
+			background:url(../images/social_1_act.jpg) no-repeat;
+		}
+		footer i a:hover.soc-2 {
+			background:url(../images/social_2_act.jpg) no-repeat;
+		}
+		footer i a:hover.soc-3 {
+			background:url(../images/social_3_act.jpg) no-repeat;
+		}
+footer span {
+	 display:block;
+	 font-size:0.917em;
+	 line-height:13px;
+	 text-transform:uppercase;
+	 color:#fff;
+}
+
+/* ============================= footer END ====================================== */
