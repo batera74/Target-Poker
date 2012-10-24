@@ -353,6 +353,44 @@ nav ul.menu {
 }
 /* ============================= carousel END =================================== */
 
+.container2 {
+	height:300px; 
+	overflow:hidden; 
+	position:relative; 
+	width:250px !important;
+}
+
+#loopedCarousel2 { 
+	width:250px; 
+	position:relative; 
+	clear:both;
+}
+#loopedCarousel2 .previous {
+	position:absolute;
+	top:103px;
+	left:-79px;
+	background:url(../images/arrow_left.png) no-repeat;
+	height:80px;
+	width:49px;
+	border:none;
+	cursor:pointer;
+}
+#loopedCarousel2 .previous:hover {
+	background:url(../images/arrow_left_act.png) no-repeat;
+}
+#loopedCarousel2 .next {
+	position:absolute;
+	top:103px;
+	right:-79px;
+	background:url(../images/arrow_right.png) no-repeat;
+	height:80px;
+	width:49px;
+	border:none;
+	cursor:pointer;
+}
+#loopedCarousel2 .next:hover {
+	background:url(../images/arrow_right_act.png) no-repeat;
+}
 
 /* ============================= content START =================================== */
 #indent {
@@ -797,12 +835,12 @@ footer i {
 }
 	footer i a {
 		display:inline-block;
-		height:32px;
-		width:32px;
+		height:25px;
+		width:107px;
 		margin:0 4px 0 2px;
 	}
 		footer i a.soc-1 {
-			background:url(../images/social_1.jpg) no-repeat;
+			background:url(../images/facebook_inativo.png) no-repeat;
 		}
 		footer i a.soc-2 {
 			background:url(../images/social_2.jpg) no-repeat;
@@ -811,7 +849,7 @@ footer i {
 			background:url(../images/social_3.jpg) no-repeat;
 		}
 		footer i a:hover.soc-1 {
-			background:url(../images/social_1_act.jpg) no-repeat;
+			background:url(../images/facebook_ativo.png) no-repeat;
 		}
 		footer i a:hover.soc-2 {
 			background:url(../images/social_2_act.jpg) no-repeat;

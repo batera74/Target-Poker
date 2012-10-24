@@ -48,13 +48,11 @@
 		container: '.container',
 		slides: '.slides',
 		pagination: '.pagination',
-		autoStart: 0, // Set to positive number for auto interval and interval time
+		autoStart: 5000, // Set to positive number for auto interval and interval time
 		slidespeed: 300, // Speed of slide animation
-		fadespeed: 300, // Speed of fade animation
-		items: 3, // Items show
+		fadespeed: 300, // Speed of fade animation		
 		padding: 10, // Padding between items
-		showPagination: false, // Shows pagination links
-		vertical: false
+		showPagination: false, // Shows pagination links		
 	};
 		
 	this.each(function() {	

@@ -1,20 +1,68 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="TargetPoker.Client.Default" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="TargetPoker.Client._Default" %>
+
+<%@ Register Assembly="AjaxControlToolkit, Version=3.5.50731.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Target Poker - </title>
+    <title>Target Poker | O melhor do poker.</title>
+    <meta charset="utf-8">
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />    
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>
+    <script type="text/javascript" src="js/Cicle_Gordita_700.font.js"></script>
+    <script type="text/javascript" src="js/Lobster_400.font.js"></script>
+    <script type="text/javascript" src="js/loopedcarousel.js"></script>    
+
+    <!--[if lt IE 7]>
+      <script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script>
+   <![endif]-->
+    <!--[if IE]>
+      <script type="text/javascript" src="js/html5.js"></script>
+   <![endif]-->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body id="page1">    
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></asp:ToolkitScriptManager>
+        <div id="main">
+            <!-- header -->
+            <header>
+                <h1><a href="#"><span>Royal online poker club</span></a></h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li id="left"><a class="act" href="#">home page</a></li>
+                    <li><a href="#">como jogar</a></li>
+                    <li><a href="#">target team</a></li>
+                    <li><a href="#">galeria</a></li>
+                    <li><a href="#">eventos</a></li>
+                    <li id="right"><a href="#">contato</a></li>
+                </ul>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+                <strong>Target Poker &copy; 2012 &bull; <a href="#">Política de Privacidade</a></strong> <i><a href="https://www.facebook.com/TargetPoker" target="_blank" class="soc-1"></i><span>
+                    <!-- {%FOOTER_LINK} -->
+                </span>
+            </footer>
+        </div>
+        <script type="text/javascript"> Cufon.now(); </script>
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-7078796-1");
+                pageTracker._trackPageview();
+            } catch (err) { }</script>
     </form>
 </body>
 </html>

@@ -1,0 +1,4 @@
+C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\bin\Debug\TargetPoker.Dados.dll
+C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\bin\Debug\TargetPoker.Dados.pdb
+C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\obj\Debug\TargetPoker.Dados.dll
+C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\obj\Debug\TargetPoker.Dados.pdb
