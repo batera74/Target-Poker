@@ -13,8 +13,15 @@ namespace TargetPoker.Client.controls
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            rptEventos.DataSource = this.DataSource;
-            rptEventos.DataBind();
+            if (this.DataSource != null && this.DataSource.Count > 0)
+            {
+                rptEventos.DataSource = this.DataSource;
+                rptEventos.DataBind();
+            }
+            else
+            {
+                lblEmBreve.Visible = true;
+            }
         }
     }
 }

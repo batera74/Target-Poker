@@ -11,7 +11,7 @@ namespace TargetPoker.Client
     public partial class Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {/*
             List<Entidades.Evento> eventos = new List<Evento>();
             Entidades.Evento evento = new Evento() { Data = "20/10", Descricao = "Esse evento é um teste. Não deixe de conferir!" };
             Entidades.Evento evento2 = new Evento() { Data = "18/10", Descricao = "Esse evento é um teste. Não deixe de conferir!" };
@@ -22,7 +22,7 @@ namespace TargetPoker.Client
             eventos.Add(evento3);
             eventos.Add(evento4);
 
-            rptEventos.DataSource = eventos;
+            rptEventos.DataSource = eventos;*/
         }
     }
 }
