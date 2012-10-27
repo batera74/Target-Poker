@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TargetPoker.Client.Default" %>
-
 <%@ Register TagPrefix="rpt" TagName="Eventos" Src="~/controls/Eventos.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">

@@ -40,7 +40,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Evento.cs" />
+    <Compile Include="Jogador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoEvento.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TargetPoker.Dados\TargetPoker.Dados.csproj">
+      <Project>{6d07beca-f574-4fe5-b9c1-032c1fa2a909}</Project>
+      <Name>TargetPoker.Dados</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

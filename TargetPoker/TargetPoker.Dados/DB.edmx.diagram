@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5fcf555abb204887834dc9896c6df300" Name="Diagram1">
+        <EntityTypeShape EntityType="targetpokerModel.evento" Width="1.5" PointX="12" PointY="6.125" />
+        <EntityTypeShape EntityType="targetpokerModel.jogador" Width="1.5" PointX="4.0458488241051551" PointY="30.547114267268736" />
+        <EntityTypeShape EntityType="targetpokerModel.tipoevento" Width="1.5" PointX="11.260042698709313" PointY="21.714739928820514" />
+        <EntityTypeShape EntityType="targetpokerModel.torneio_jogador" Width="1.5" PointX="4.8251099981484513" PointY="24.710773345413976" />
+        <AssociationConnector Association="targetpokerModel.evento_ibfk_1" />
+        <AssociationConnector Association="targetpokerModel.torneio_jogador_ibfk_1" />
+        <AssociationConnector Association="targetpokerModel.torneio_jogador_ibfk_2" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

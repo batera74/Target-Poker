@@ -38,7 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit, Version=3.5.50731.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -109,7 +111,6 @@
     <Content Include="js\jquery-1.7.2.min.js" />
     <Content Include="js\Lobster_400.font.js" />
     <Content Include="js\loopedcarousel.js" />
-    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controls\Eventos.ascx.cs">
@@ -159,18 +160,21 @@
   <ItemGroup>
     <Content Include="Default.Master" />
     <Content Include="images\foto_carousel.psd" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TargetPoker.Entidades\TargetPoker.Entidades.csproj">
       <Project>{95aa2cb2-3555-47af-bd10-3625aa9a33f1}</Project>
       <Name>TargetPoker.Entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

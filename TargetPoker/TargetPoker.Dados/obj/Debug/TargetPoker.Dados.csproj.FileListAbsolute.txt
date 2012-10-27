@@ -2,3 +2,11 @@ C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\
 C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\bin\Debug\TargetPoker.Dados.pdb
 C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\obj\Debug\TargetPoker.Dados.dll
 C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\obj\Debug\TargetPoker.Dados.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\bin\Debug\TargetPoker.Dados.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\bin\Debug\TargetPoker.Dados.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\obj\Debug\TargetPoker.Dados.csprojResolveAssemblyReference.cache
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\obj\Debug\TargetPoker.Dados.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\obj\Debug\TargetPoker.Dados.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\bin\Debug\TargetPoker.Dados.dll.config
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\bin\Debug\EntityFramework.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Dados\bin\Debug\EntityFramework.xml

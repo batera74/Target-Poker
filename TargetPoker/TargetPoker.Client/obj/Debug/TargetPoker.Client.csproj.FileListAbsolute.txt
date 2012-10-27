@@ -5,3 +5,11 @@ C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client
 C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\obj\Debug\TargetPoker.Client.pdb
 C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Entidades.dll
 C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Entidades.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\obj\Debug\TargetPoker.Client.csprojResolveAssemblyReference.cache
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\obj\Debug\TargetPoker.Client.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\obj\Debug\TargetPoker.Client.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Client.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Client.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Entidades.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Entidades.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\AjaxControlToolkit.dll

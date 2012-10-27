@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="targetpokerModelStoreContainer" CdmEntityContainer="targetpokerEntities">
+    <EntitySetMapping Name="jogador">
+      <EntityTypeMapping TypeName="targetpokerModel.jogador">
+        <MappingFragment StoreEntitySet="jogador">
+          <ScalarProperty Name="id_jogador" ColumnName="id_jogador" />
+          <ScalarProperty Name="ds_nome" ColumnName="ds_nome" />
+          <ScalarProperty Name="ds_sobrenome" ColumnName="ds_sobrenome" />
+          <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
+          <ScalarProperty Name="ds_email" ColumnName="ds_email" />
+          <ScalarProperty Name="ds_imagem" ColumnName="ds_imagem" />
+          <ScalarProperty Name="ic_target_team" ColumnName="ic_target_team" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="torneio">
+      <EntityTypeMapping TypeName="targetpokerModel.torneio">
+        <MappingFragment StoreEntitySet="torneio">
+          <ScalarProperty Name="id_torneio" ColumnName="id_torneio" />
+          <ScalarProperty Name="ds_torneio" ColumnName="ds_torneio" />
+          <ScalarProperty Name="dt_torneio" ColumnName="dt_torneio" />
+          <ScalarProperty Name="ds_local" ColumnName="ds_local" />
+          <ScalarProperty Name="vl_buy_in" ColumnName="vl_buy_in" />
+          <ScalarProperty Name="vl_rake" ColumnName="vl_rake" />
+          <ScalarProperty Name="vl_total_premiacao" ColumnName="vl_total_premiacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="torneio_jogadores">
+      <EntityTypeMapping TypeName="targetpokerModel.torneio_jogadores">
+        <MappingFragment StoreEntitySet="torneio_jogadores">
+          <ScalarProperty Name="id_torneio" ColumnName="id_torneio" />
+          <ScalarProperty Name="id_jogador" ColumnName="id_jogador" />
+          <ScalarProperty Name="ds_posicao_torneio" ColumnName="ds_posicao_torneio" />
+          <ScalarProperty Name="qt_pontos" ColumnName="qt_pontos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

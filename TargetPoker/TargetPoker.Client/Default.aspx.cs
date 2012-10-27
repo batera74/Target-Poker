@@ -23,6 +23,8 @@ namespace TargetPoker.Client
             eventos.Add(evento4);
 
             rptEventos.DataSource = eventos;*/
+
+            
         }
     }
 }
