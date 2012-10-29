@@ -162,12 +162,6 @@
     <Content Include="images\foto_carousel.psd" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TargetPoker.Entidades\TargetPoker.Entidades.csproj">
-      <Project>{95aa2cb2-3555-47af-bd10-3625aa9a33f1}</Project>
-      <Name>TargetPoker.Entidades</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
@@ -175,6 +169,16 @@
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TargetPoker.Dados\TargetPoker.Dados.csproj">
+      <Project>{6d07beca-f574-4fe5-b9c1-032c1fa2a909}</Project>
+      <Name>TargetPoker.Dados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TargetPoker.Negocio\TargetPoker.Negocio.csproj">
+      <Project>{9af0a36f-7868-45cb-b1c8-2b78e7fb026c}</Project>
+      <Name>TargetPoker.Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

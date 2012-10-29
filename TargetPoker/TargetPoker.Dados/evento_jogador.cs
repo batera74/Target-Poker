@@ -12,21 +12,14 @@ namespace TargetPoker.Dados
     using System;
     using System.Collections.Generic;
     
-    public partial class jogador
+    public partial class evento_jogador
     {
-        public jogador()
-        {
-            this.evento_jogador = new HashSet<evento_jogador>();
-        }
-    
+        public int id_evento { get; set; }
         public int id_jogador { get; set; }
-        public string nm_jogador { get; set; }
-        public string nm_sobrenome_jogador { get; set; }
-        public System.DateTime dt_nascimento { get; set; }
-        public string ds_email { get; set; }
-        public string ds_imagem { get; set; }
-        public bool ic_target_team { get; set; }
+        public int ds_posicao_evento { get; set; }
+        public int qt_pontos { get; set; }
     
-        public virtual ICollection<evento_jogador> evento_jogador { get; set; }
+        public virtual jogador jogador { get; set; }
+        public virtual evento evento { get; set; }
     }
 }

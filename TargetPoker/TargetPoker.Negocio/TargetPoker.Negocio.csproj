@@ -42,17 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ranking.cs" />
+    <Compile Include="Jogador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TargetPoker.Dados\TargetPoker.Dados.csproj">
       <Project>{6d07beca-f574-4fe5-b9c1-032c1fa2a909}</Project>
       <Name>TargetPoker.Dados</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TargetPoker.Entidades\TargetPoker.Entidades.csproj">
-      <Project>{95aa2cb2-3555-47af-bd10-3625aa9a33f1}</Project>
-      <Name>TargetPoker.Entidades</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

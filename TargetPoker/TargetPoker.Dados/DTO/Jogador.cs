@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TargetPoker.Entidades
+namespace TargetPoker.Dados.DTO
 {
     public class Jogador
     {
@@ -16,7 +16,7 @@ namespace TargetPoker.Entidades
         public int Pontos { get; set; }
         public decimal Entrelas { get; set; }
         public ICollection<Dados.evento_jogador> Torneios { get; set; }
-        public int MelhorPosicaoTorneio { get; set; }
+        public int MelhorPosicaoEvento { get; set; }
         public int EventosDisputados { get; set; }
     }
 }

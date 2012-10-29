@@ -14,11 +14,12 @@ create table if not exists `Evento` (
  `id_evento` int not null auto_increment primary key,
  `id_tipo_evento` int not null,
  `ds_titulo`  varchar(50) not null,
- `ds_torneio` varchar(250) not null,
- `dt_torneio` datetime not null,
+ `ds_evento` varchar(250) not null,
+ `dt_evento` datetime not null,
  `ds_local`   varchar(70), 
  `vl_buy_in`  decimal null,
  `vl_rake` decimal null,
+ `vl_garantido_premiacao` decimal null,
  `vl_total_premiacao` decimal null,
  `qt_minima_jogador` int null,
  `qt_maxima_jogador` int null,
@@ -36,11 +37,11 @@ create table if not exists `Jogador` (
  `ic_target_team` bit not null 
 );
 
-drop table if exists `Torneio_Jogador`;
-create table if not exists `Torneio_Jogador` (
+drop table if exists `Evento_Jogador`;
+create table if not exists `Evento_Jogador` (
  `id_evento` int not null, 
  `id_jogador` int not null,
- `ds_posicao_torneio` int not null,
+ `ds_posicao_evento` int not null,
  `qt_pontos` int not null,
  foreign key (id_evento) references Evento(id_evento),
  foreign key (id_jogador) references Jogador(id_jogador)

@@ -7,27 +7,27 @@
     <Schema Namespace="targetpokerModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="targetpokerModelStoreContainer">
           <EntitySet Name="evento" EntityType="targetpokerModel.Store.evento" store:Type="Tables" Schema="targetpoker" />
+          <EntitySet Name="evento_jogador" EntityType="targetpokerModel.Store.evento_jogador" store:Type="Tables" store:Schema="targetpoker" store:Name="evento_jogador">
+            <DefiningQuery>SELECT
+      `evento_jogador`.`id_evento`, 
+      `evento_jogador`.`id_jogador`, 
+      `evento_jogador`.`ds_posicao_evento`, 
+      `evento_jogador`.`qt_pontos`
+      FROM `evento_jogador` AS `evento_jogador`</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="jogador" EntityType="targetpokerModel.Store.jogador" store:Type="Tables" Schema="targetpoker" />
           <EntitySet Name="tipoevento" EntityType="targetpokerModel.Store.tipoevento" store:Type="Tables" Schema="targetpoker" />
-          <EntitySet Name="torneio_jogador" EntityType="targetpokerModel.Store.torneio_jogador" store:Type="Tables" store:Schema="targetpoker" store:Name="torneio_jogador">
-            <DefiningQuery>SELECT
-      `torneio_jogador`.`id_evento`, 
-      `torneio_jogador`.`id_jogador`, 
-      `torneio_jogador`.`ds_posicao_torneio`, 
-      `torneio_jogador`.`qt_pontos`
-      FROM `torneio_jogador` AS `torneio_jogador`</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="evento_ibfk_1" Association="targetpokerModel.Store.evento_ibfk_1">
             <End Role="tipoevento" EntitySet="tipoevento" />
             <End Role="evento" EntitySet="evento" />
           </AssociationSet>
-          <AssociationSet Name="torneio_jogador_ibfk_1" Association="targetpokerModel.Store.torneio_jogador_ibfk_1">
+          <AssociationSet Name="evento_jogador_ibfk_1" Association="targetpokerModel.Store.evento_jogador_ibfk_1">
             <End Role="evento" EntitySet="evento" />
-            <End Role="torneio_jogador" EntitySet="torneio_jogador" />
+            <End Role="evento_jogador" EntitySet="evento_jogador" />
           </AssociationSet>
-          <AssociationSet Name="torneio_jogador_ibfk_2" Association="targetpokerModel.Store.torneio_jogador_ibfk_2">
+          <AssociationSet Name="evento_jogador_ibfk_2" Association="targetpokerModel.Store.evento_jogador_ibfk_2">
             <End Role="jogador" EntitySet="jogador" />
-            <End Role="torneio_jogador" EntitySet="torneio_jogador" />
+            <End Role="evento_jogador" EntitySet="evento_jogador" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="evento">
@@ -37,14 +37,30 @@
           <Property Name="id_evento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="id_tipo_evento" Type="int" Nullable="false" />
           <Property Name="ds_titulo" Type="varchar" Nullable="false" MaxLength="50" />
-          <Property Name="ds_torneio" Type="varchar" Nullable="false" MaxLength="250" />
-          <Property Name="dt_torneio" Type="datetime" Nullable="false" />
+          <Property Name="ds_evento" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="dt_evento" Type="datetime" Nullable="false" />
           <Property Name="ds_local" Type="varchar" MaxLength="70" />
           <Property Name="vl_buy_in" Type="decimal" />
           <Property Name="vl_rake" Type="decimal" />
+          <Property Name="vl_garantido_premiacao" Type="decimal" />
           <Property Name="vl_total_premiacao" Type="decimal" />
           <Property Name="qt_minima_jogador" Type="int" />
           <Property Name="qt_maxima_jogador" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.targetpoker.evento_jogador' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="evento_jogador">
+          <Key>
+            <PropertyRef Name="id_evento" />
+            <PropertyRef Name="id_jogador" />
+            <PropertyRef Name="ds_posicao_evento" />
+            <PropertyRef Name="qt_pontos" />
+          </Key>
+          <Property Name="id_evento" Type="int" Nullable="false" />
+          <Property Name="id_jogador" Type="int" Nullable="false" />
+          <Property Name="ds_posicao_evento" Type="int" Nullable="false" />
+          <Property Name="qt_pontos" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="jogador">
           <Key>
@@ -65,21 +81,6 @@
           <Property Name="id_tipo_evento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="ds_evento" Type="varchar" Nullable="false" MaxLength="60" />
         </EntityType>
-        <!--Errors Found During Generation:
-      warning 6002: The table/view 'def.targetpoker.torneio_jogador' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
-      -->
-        <EntityType Name="torneio_jogador">
-          <Key>
-            <PropertyRef Name="id_evento" />
-            <PropertyRef Name="id_jogador" />
-            <PropertyRef Name="ds_posicao_torneio" />
-            <PropertyRef Name="qt_pontos" />
-          </Key>
-          <Property Name="id_evento" Type="int" Nullable="false" />
-          <Property Name="id_jogador" Type="int" Nullable="false" />
-          <Property Name="ds_posicao_torneio" Type="int" Nullable="false" />
-          <Property Name="qt_pontos" Type="int" Nullable="false" />
-        </EntityType>
         <Association Name="evento_ibfk_1">
           <End Role="tipoevento" Type="targetpokerModel.Store.tipoevento" Multiplicity="1" />
           <End Role="evento" Type="targetpokerModel.Store.evento" Multiplicity="*" />
@@ -92,26 +93,26 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="torneio_jogador_ibfk_1">
+        <Association Name="evento_jogador_ibfk_1">
           <End Role="evento" Type="targetpokerModel.Store.evento" Multiplicity="1" />
-          <End Role="torneio_jogador" Type="targetpokerModel.Store.torneio_jogador" Multiplicity="*" />
+          <End Role="evento_jogador" Type="targetpokerModel.Store.evento_jogador" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="evento">
               <PropertyRef Name="id_evento" />
             </Principal>
-            <Dependent Role="torneio_jogador">
+            <Dependent Role="evento_jogador">
               <PropertyRef Name="id_evento" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="torneio_jogador_ibfk_2">
+        <Association Name="evento_jogador_ibfk_2">
           <End Role="jogador" Type="targetpokerModel.Store.jogador" Multiplicity="1" />
-          <End Role="torneio_jogador" Type="targetpokerModel.Store.torneio_jogador" Multiplicity="*" />
+          <End Role="evento_jogador" Type="targetpokerModel.Store.evento_jogador" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="jogador">
               <PropertyRef Name="id_jogador" />
             </Principal>
-            <Dependent Role="torneio_jogador">
+            <Dependent Role="evento_jogador">
               <PropertyRef Name="id_jogador" />
             </Dependent>
           </ReferentialConstraint>
@@ -121,40 +122,36 @@
     <edmx:ConceptualModels>
       <Schema Namespace="targetpokerModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
         <EntityContainer Name="targetpokerEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="evento" EntityType="targetpokerModel.evento" />
+          <EntitySet Name="evento_jogador" EntityType="targetpokerModel.evento_jogador" />
           <EntitySet Name="jogador" EntityType="targetpokerModel.jogador" />
           <EntitySet Name="tipoevento" EntityType="targetpokerModel.tipoevento" />
-          <EntitySet Name="torneio_jogador" EntityType="targetpokerModel.torneio_jogador" />
+          <AssociationSet Name="evento_jogador_ibfk_2" Association="targetpokerModel.evento_jogador_ibfk_2">
+            <End Role="jogador" EntitySet="jogador" />
+            <End Role="evento_jogador" EntitySet="evento_jogador" />
+          </AssociationSet>
+          <EntitySet Name="evento" EntityType="targetpokerModel.evento" />
           <AssociationSet Name="evento_ibfk_1" Association="targetpokerModel.evento_ibfk_1">
             <End Role="tipoevento" EntitySet="tipoevento" />
             <End Role="evento" EntitySet="evento" />
           </AssociationSet>
-          <AssociationSet Name="torneio_jogador_ibfk_1" Association="targetpokerModel.torneio_jogador_ibfk_1">
+          <AssociationSet Name="evento_jogador_ibfk_1" Association="targetpokerModel.evento_jogador_ibfk_1">
             <End Role="evento" EntitySet="evento" />
-            <End Role="torneio_jogador" EntitySet="torneio_jogador" />
-          </AssociationSet>
-          <AssociationSet Name="torneio_jogador_ibfk_2" Association="targetpokerModel.torneio_jogador_ibfk_2">
-            <End Role="jogador" EntitySet="jogador" />
-            <End Role="torneio_jogador" EntitySet="torneio_jogador" />
+            <End Role="evento_jogador" EntitySet="evento_jogador" />
           </AssociationSet>
         </EntityContainer>
-        <EntityType Name="evento">
+        <EntityType Name="evento_jogador">
           <Key>
             <PropertyRef Name="id_evento" />
+            <PropertyRef Name="id_jogador" />
+            <PropertyRef Name="ds_posicao_evento" />
+            <PropertyRef Name="qt_pontos" />
           </Key>
-          <Property Type="Int32" Name="id_evento" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="Int32" Name="id_tipo_evento" Nullable="false" />
-          <Property Type="String" Name="ds_titulo" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-          <Property Type="String" Name="ds_torneio" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
-          <Property Type="DateTime" Name="dt_torneio" Nullable="false" Precision="3" />
-          <Property Type="String" Name="ds_local" MaxLength="70" Unicode="false" FixedLength="false" />
-          <Property Type="Decimal" Name="vl_buy_in" Precision="10" Scale="0" />
-          <Property Type="Decimal" Name="vl_rake" Precision="10" Scale="0" />
-          <Property Type="Decimal" Name="vl_total_premiacao" Precision="10" Scale="0" />
-          <Property Type="Int32" Name="qt_minima_jogador" />
-          <Property Type="Int32" Name="qt_maxima_jogador" />
-          <NavigationProperty Name="tipoevento" Relationship="targetpokerModel.evento_ibfk_1" FromRole="evento" ToRole="tipoevento" />
-          <NavigationProperty Name="torneio_jogador" Relationship="targetpokerModel.torneio_jogador_ibfk_1" FromRole="evento" ToRole="torneio_jogador" />
+          <Property Type="Int32" Name="id_evento" Nullable="false" />
+          <Property Type="Int32" Name="id_jogador" Nullable="false" />
+          <Property Type="Int32" Name="ds_posicao_evento" Nullable="false" />
+          <Property Type="Int32" Name="qt_pontos" Nullable="false" />
+          <NavigationProperty Name="jogador" Relationship="targetpokerModel.evento_jogador_ibfk_2" FromRole="evento_jogador" ToRole="jogador" />
+          <NavigationProperty Name="evento" Relationship="targetpokerModel.evento_jogador_ibfk_1" FromRole="evento_jogador" ToRole="evento" />
         </EntityType>
         <EntityType Name="jogador">
           <Key>
@@ -167,7 +164,7 @@
           <Property Type="String" Name="ds_email" MaxLength="70" Unicode="false" FixedLength="false" />
           <Property Type="String" Name="ds_imagem" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Type="Boolean" Name="ic_target_team" Nullable="false" />
-          <NavigationProperty Name="torneio_jogador" Relationship="targetpokerModel.torneio_jogador_ibfk_2" FromRole="jogador" ToRole="torneio_jogador" />
+          <NavigationProperty Name="evento_jogador" Relationship="targetpokerModel.evento_jogador_ibfk_2" FromRole="jogador" ToRole="evento_jogador" />
         </EntityType>
         <EntityType Name="tipoevento">
           <Key>
@@ -177,19 +174,36 @@
           <Property Type="String" Name="ds_evento" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="evento" Relationship="targetpokerModel.evento_ibfk_1" FromRole="tipoevento" ToRole="evento" />
         </EntityType>
-        <EntityType Name="torneio_jogador">
+        <Association Name="evento_jogador_ibfk_2">
+          <End Type="targetpokerModel.jogador" Role="jogador" Multiplicity="1" />
+          <End Type="targetpokerModel.evento_jogador" Role="evento_jogador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="jogador">
+              <PropertyRef Name="id_jogador" />
+            </Principal>
+            <Dependent Role="evento_jogador">
+              <PropertyRef Name="id_jogador" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="evento">
           <Key>
             <PropertyRef Name="id_evento" />
-            <PropertyRef Name="id_jogador" />
-            <PropertyRef Name="ds_posicao_torneio" />
-            <PropertyRef Name="qt_pontos" />
           </Key>
-          <Property Type="Int32" Name="id_evento" Nullable="false" />
-          <Property Type="Int32" Name="id_jogador" Nullable="false" />
-          <Property Type="Int32" Name="ds_posicao_torneio" Nullable="false" />
-          <Property Type="Int32" Name="qt_pontos" Nullable="false" />
-          <NavigationProperty Name="evento" Relationship="targetpokerModel.torneio_jogador_ibfk_1" FromRole="torneio_jogador" ToRole="evento" />
-          <NavigationProperty Name="jogador" Relationship="targetpokerModel.torneio_jogador_ibfk_2" FromRole="torneio_jogador" ToRole="jogador" />
+          <Property Type="Int32" Name="id_evento" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="id_tipo_evento" Nullable="false" />
+          <Property Type="String" Name="ds_titulo" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Type="String" Name="ds_evento" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Type="DateTime" Name="dt_evento" Nullable="false" Precision="3" />
+          <Property Type="String" Name="ds_local" MaxLength="70" Unicode="false" FixedLength="false" />
+          <Property Type="Decimal" Name="vl_buy_in" Precision="10" Scale="0" />
+          <Property Type="Decimal" Name="vl_rake" Precision="10" Scale="0" />
+          <Property Type="Decimal" Name="vl_garantido_premiacao" Precision="10" Scale="0" />
+          <Property Type="Decimal" Name="vl_total_premiacao" Precision="10" Scale="0" />
+          <Property Type="Int32" Name="qt_minima_jogador" />
+          <Property Type="Int32" Name="qt_maxima_jogador" />
+          <NavigationProperty Name="tipoevento" Relationship="targetpokerModel.evento_ibfk_1" FromRole="evento" ToRole="tipoevento" />
+          <NavigationProperty Name="evento_jogador" Relationship="targetpokerModel.evento_jogador_ibfk_1" FromRole="evento" ToRole="evento_jogador" />
         </EntityType>
         <Association Name="evento_ibfk_1">
           <End Type="targetpokerModel.tipoevento" Role="tipoevento" Multiplicity="1" />
@@ -203,27 +217,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="torneio_jogador_ibfk_1">
+        <Association Name="evento_jogador_ibfk_1">
           <End Type="targetpokerModel.evento" Role="evento" Multiplicity="1" />
-          <End Type="targetpokerModel.torneio_jogador" Role="torneio_jogador" Multiplicity="*" />
+          <End Type="targetpokerModel.evento_jogador" Role="evento_jogador" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="evento">
               <PropertyRef Name="id_evento" />
             </Principal>
-            <Dependent Role="torneio_jogador">
+            <Dependent Role="evento_jogador">
               <PropertyRef Name="id_evento" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="torneio_jogador_ibfk_2">
-          <End Type="targetpokerModel.jogador" Role="jogador" Multiplicity="1" />
-          <End Type="targetpokerModel.torneio_jogador" Role="torneio_jogador" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="jogador">
-              <PropertyRef Name="id_jogador" />
-            </Principal>
-            <Dependent Role="torneio_jogador">
-              <PropertyRef Name="id_jogador" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -233,19 +235,12 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="targetpokerModelStoreContainer" CdmEntityContainer="targetpokerEntities">
-          <EntitySetMapping Name="evento">
-            <EntityTypeMapping TypeName="targetpokerModel.evento">
-              <MappingFragment StoreEntitySet="evento">
-                <ScalarProperty Name="qt_maxima_jogador" ColumnName="qt_maxima_jogador" />
-                <ScalarProperty Name="qt_minima_jogador" ColumnName="qt_minima_jogador" />
-                <ScalarProperty Name="vl_total_premiacao" ColumnName="vl_total_premiacao" />
-                <ScalarProperty Name="vl_rake" ColumnName="vl_rake" />
-                <ScalarProperty Name="vl_buy_in" ColumnName="vl_buy_in" />
-                <ScalarProperty Name="ds_local" ColumnName="ds_local" />
-                <ScalarProperty Name="dt_torneio" ColumnName="dt_torneio" />
-                <ScalarProperty Name="ds_torneio" ColumnName="ds_torneio" />
-                <ScalarProperty Name="ds_titulo" ColumnName="ds_titulo" />
-                <ScalarProperty Name="id_tipo_evento" ColumnName="id_tipo_evento" />
+          <EntitySetMapping Name="evento_jogador">
+            <EntityTypeMapping TypeName="targetpokerModel.evento_jogador">
+              <MappingFragment StoreEntitySet="evento_jogador">
+                <ScalarProperty Name="qt_pontos" ColumnName="qt_pontos" />
+                <ScalarProperty Name="ds_posicao_evento" ColumnName="ds_posicao_evento" />
+                <ScalarProperty Name="id_jogador" ColumnName="id_jogador" />
                 <ScalarProperty Name="id_evento" ColumnName="id_evento" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -271,12 +266,20 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="torneio_jogador">
-            <EntityTypeMapping TypeName="targetpokerModel.torneio_jogador">
-              <MappingFragment StoreEntitySet="torneio_jogador">
-                <ScalarProperty Name="qt_pontos" ColumnName="qt_pontos" />
-                <ScalarProperty Name="ds_posicao_torneio" ColumnName="ds_posicao_torneio" />
-                <ScalarProperty Name="id_jogador" ColumnName="id_jogador" />
+          <EntitySetMapping Name="evento">
+            <EntityTypeMapping TypeName="targetpokerModel.evento">
+              <MappingFragment StoreEntitySet="evento">
+                <ScalarProperty Name="qt_maxima_jogador" ColumnName="qt_maxima_jogador" />
+                <ScalarProperty Name="qt_minima_jogador" ColumnName="qt_minima_jogador" />
+                <ScalarProperty Name="vl_total_premiacao" ColumnName="vl_total_premiacao" />
+                <ScalarProperty Name="vl_garantido_premiacao" ColumnName="vl_garantido_premiacao" />
+                <ScalarProperty Name="vl_rake" ColumnName="vl_rake" />
+                <ScalarProperty Name="vl_buy_in" ColumnName="vl_buy_in" />
+                <ScalarProperty Name="ds_local" ColumnName="ds_local" />
+                <ScalarProperty Name="dt_evento" ColumnName="dt_evento" />
+                <ScalarProperty Name="ds_evento" ColumnName="ds_evento" />
+                <ScalarProperty Name="ds_titulo" ColumnName="ds_titulo" />
+                <ScalarProperty Name="id_tipo_evento" ColumnName="id_tipo_evento" />
                 <ScalarProperty Name="id_evento" ColumnName="id_evento" />
               </MappingFragment>
             </EntityTypeMapping>

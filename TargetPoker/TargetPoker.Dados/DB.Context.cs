@@ -25,9 +25,9 @@ namespace TargetPoker.Dados
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<evento> evento { get; set; }
+        public DbSet<evento_jogador> evento_jogador { get; set; }
         public DbSet<jogador> jogador { get; set; }
         public DbSet<tipoevento> tipoevento { get; set; }
-        public DbSet<torneio_jogador> torneio_jogador { get; set; }
+        public DbSet<evento> evento { get; set; }
     }
 }

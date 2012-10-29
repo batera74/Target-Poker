@@ -16,22 +16,23 @@ namespace TargetPoker.Dados
     {
         public evento()
         {
-            this.torneio_jogador = new HashSet<torneio_jogador>();
+            this.evento_jogador = new HashSet<evento_jogador>();
         }
     
         public int id_evento { get; set; }
         public int id_tipo_evento { get; set; }
         public string ds_titulo { get; set; }
-        public string ds_torneio { get; set; }
-        public System.DateTime dt_torneio { get; set; }
+        public string ds_evento { get; set; }
+        public System.DateTime dt_evento { get; set; }
         public string ds_local { get; set; }
         public Nullable<decimal> vl_buy_in { get; set; }
         public Nullable<decimal> vl_rake { get; set; }
+        public Nullable<decimal> vl_garantido_premiacao { get; set; }
         public Nullable<decimal> vl_total_premiacao { get; set; }
         public Nullable<int> qt_minima_jogador { get; set; }
         public Nullable<int> qt_maxima_jogador { get; set; }
     
         public virtual tipoevento tipoevento { get; set; }
-        public virtual ICollection<torneio_jogador> torneio_jogador { get; set; }
+        public virtual ICollection<evento_jogador> evento_jogador { get; set; }
     }
 }
