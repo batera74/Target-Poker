@@ -50,6 +50,10 @@
       <Project>{6d07beca-f574-4fe5-b9c1-032c1fa2a909}</Project>
       <Name>TargetPoker.Dados</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TargetPoker.Entidade\TargetPoker.Entidade.csproj">
+      <Project>{92f26285-2432-4003-a407-ade359bbdec8}</Project>
+      <Name>TargetPoker.Entidade</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

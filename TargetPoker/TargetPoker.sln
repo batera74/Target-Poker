@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetPoker.Negocio", "Targ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetPoker.Dados", "TargetPoker.Dados\TargetPoker.Dados.csproj", "{6D07BECA-F574-4FE5-B9C1-032C1FA2A909}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetPoker.Entidade", "TargetPoker.Entidade\TargetPoker.Entidade.csproj", "{92F26285-2432-4003-A407-ADE359BBDEC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{6D07BECA-F574-4FE5-B9C1-032C1FA2A909}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D07BECA-F574-4FE5-B9C1-032C1FA2A909}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D07BECA-F574-4FE5-B9C1-032C1FA2A909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F26285-2432-4003-A407-ADE359BBDEC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F26285-2432-4003-A407-ADE359BBDEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F26285-2432-4003-A407-ADE359BBDEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F26285-2432-4003-A407-ADE359BBDEC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
