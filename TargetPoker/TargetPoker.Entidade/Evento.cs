@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TargetPoker.Dados.DTO
+namespace TargetPoker.Entidade
 {
     public class Evento
     {
@@ -16,6 +16,7 @@ namespace TargetPoker.Dados.DTO
         public decimal BuyIn { get; set; }
         public decimal Rake { get; set; }
         public int QuantidadeMinimaJogadores { get; set; } 
-        public int QuantidadeMaximaJogadores { get; set; } 
+        public int QuantidadeMaximaJogadores { get; set; }
+        public EventosJogadores Jogadores { get; set; }
     }
 }

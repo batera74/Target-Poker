@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TargetPoker.Dados.DTO
+namespace TargetPoker.Entidade
 {
     public enum TipoEvento
     {
