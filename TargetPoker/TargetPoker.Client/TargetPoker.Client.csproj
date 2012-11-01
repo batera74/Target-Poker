@@ -61,10 +61,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="controls\Eventos.ascx" />
+    <Content Include="Admin\Tips.aspx" />
+    <Content Include="Admin\Events.aspx" />
+    <Content Include="Admin\Players.aspx" />
+    <Content Include="Admin\Partners.aspx" />
+    <Content Include="controls\Events.ascx" />
     <Content Include="controls\LoopedCarousel.ascx" />
     <Content Include="controls\Ranking.ascx" />
     <Content Include="controls\TargetTeam.ascx" />
+    <Content Include="css\players_admin.css" />
     <Content Include="css\layout.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\style.css" />
@@ -114,12 +119,47 @@
     <Content Include="js\loopedcarousel.js" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="controls\Eventos.ascx.cs">
-      <DependentUpon>Eventos.ascx</DependentUpon>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="controls\Eventos.ascx.designer.cs">
-      <DependentUpon>Eventos.ascx</DependentUpon>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Tips.aspx.cs">
+      <DependentUpon>Tips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Tips.aspx.designer.cs">
+      <DependentUpon>Tips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Players.aspx.cs">
+      <DependentUpon>Players.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Players.aspx.designer.cs">
+      <DependentUpon>Players.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Partners.aspx.cs">
+      <DependentUpon>Partners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Partners.aspx.designer.cs">
+      <DependentUpon>Partners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\Events.ascx.cs">
+      <DependentUpon>Events.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\Events.ascx.designer.cs">
+      <DependentUpon>Events.ascx</DependentUpon>
     </Compile>
     <Compile Include="controls\LoopedCarousel.ascx.cs">
       <DependentUpon>LoopedCarousel.ascx</DependentUpon>
@@ -165,6 +205,7 @@
   <ItemGroup>
     <Content Include="web.config" />
     <Content Include="packages.config" />
+    <Content Include="Admin\Admin.Master" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

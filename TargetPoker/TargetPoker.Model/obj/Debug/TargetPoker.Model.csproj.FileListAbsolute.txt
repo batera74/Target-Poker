@@ -7,3 +7,8 @@ C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoke
 C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Model\bin\Debug\TargetPoker.Model.dll
 C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Model\bin\Debug\TargetPoker.Model.pdb
 C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Model\obj\Debug\TargetPoker.Model.csprojResolveAssemblyReference.cache
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Model\bin\Debug\TargetPoker.Model.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Model\bin\Debug\TargetPoker.Model.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Model\obj\Debug\TargetPoker.Model.csprojResolveAssemblyReference.cache
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Model\obj\Debug\TargetPoker.Model.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Model\obj\Debug\TargetPoker.Model.pdb

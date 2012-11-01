@@ -101,6 +101,11 @@ p {
     color: #61766a;
     margin: 0 0 18px 0;
 }
+
+.fleft
+{
+    float: left;
+}
 /* ========================= Global properties END =============================== */
 
 

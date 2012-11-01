@@ -16,3 +16,12 @@ C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargerPoke
 C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargerPoker.Data\bin\Debug\TargetPoker.Model.dll
 C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargerPoker.Data\bin\Debug\TargetPoker.Model.pdb
 C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargerPoker.Data\bin\Debug\EntityFramework.xml
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargerPoker.Data\bin\Debug\TargerPoker.Data.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargerPoker.Data\bin\Debug\TargerPoker.Data.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargerPoker.Data\bin\Debug\EntityFramework.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargerPoker.Data\bin\Debug\TargetPoker.Model.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargerPoker.Data\bin\Debug\TargetPoker.Model.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargerPoker.Data\bin\Debug\EntityFramework.xml
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargerPoker.Data\obj\Debug\TargetPoker.Data.csprojResolveAssemblyReference.cache
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargerPoker.Data\obj\Debug\TargerPoker.Data.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargerPoker.Data\obj\Debug\TargerPoker.Data.pdb

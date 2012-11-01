@@ -10,8 +10,6 @@ C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\
 C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\obj\Debug\TargetPoker.Client.pdb
 C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Client.dll
 C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Client.pdb
-C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Entidades.dll
-C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Entidades.pdb
 C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\AjaxControlToolkit.dll
 C:\Users\GUILHERME\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Client\obj\Debug\TargetPoker.Client.dll
 C:\Users\GUILHERME\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Client\obj\Debug\TargetPoker.Client.pdb
@@ -31,3 +29,11 @@ C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoke
 C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Client\bin\TargerPoker.Data.pdb
 C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Client\bin\EntityFramework.xml
 C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Client\bin\AjaxControlToolkit.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Control.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Model.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargerPoker.Data.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\EntityFramework.dll
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Control.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargetPoker.Model.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\TargerPoker.Data.pdb
+C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Client\bin\EntityFramework.xml

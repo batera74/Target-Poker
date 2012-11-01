@@ -7,18 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TargetPoker.Client {
+namespace TargetPoker.Client.controls {
     
     
-    public partial class Default {
+    public partial class Events {
         
         /// <summary>
-        /// rptEvents control.
+        /// rptEventos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::TargetPoker.Client.controls.Events rptEvents;
+        protected global::System.Web.UI.WebControls.Repeater rptEventos;
+        
+        /// <summary>
+        /// lblEmBreve control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEmBreve;
     }
 }

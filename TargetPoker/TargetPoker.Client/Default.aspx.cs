@@ -34,7 +34,7 @@ namespace TargetPoker.Client
             player.Surname = "Andrade";
             player.TargetTeam = true;
             player.Email = "guilherme.andrade@outlook.com";
-            player.Birth = DateTime.Now;
+            player.Birth = new DateTime(1990, 12, 22);
             
             playerController.SavePlayer(player);
         }

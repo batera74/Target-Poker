@@ -36,6 +36,8 @@ namespace TargetPoker.Model
 
         public int EventsPlayed { get { return this.Events.Count(); } }
 
+        public string Photo { get; set; }
+
         public Guid GlobalId { get; set; }
 
         private decimal GetStars(int points, int events)

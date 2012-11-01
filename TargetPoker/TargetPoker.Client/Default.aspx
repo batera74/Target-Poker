@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TargetPoker.Client.Default" %>
-<%@ Register TagPrefix="rpt" TagName="Eventos" Src="~/controls/Eventos.ascx" %>
+<%@ Register TagPrefix="rpt" TagName="Events" Src="~/controls/Events.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
@@ -85,7 +85,7 @@
         <div class="wrapper">
             <div id="indent">
                 <article class="col-1">
-                    <rpt:Eventos runat="server" ID="rptEventos" />
+                    <rpt:Events runat="server" ID="rptEvents" />
                 </article>
                 <article class="col-2">
                     <h2 class="h-indent">Seja bem vindo!</h2>
