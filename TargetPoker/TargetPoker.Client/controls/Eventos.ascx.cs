@@ -4,12 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using TargetPoker.Negocio;
 
 namespace TargetPoker.Client.controls
 {
     public partial class Eventos : System.Web.UI.UserControl
     {
+        /*
         public List<Dados.DTO.Evento> DataSource;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -23,6 +23,6 @@ namespace TargetPoker.Client.controls
             {
                 lblEmBreve.Visible = true;
             }
-        }
+        }*/
     }
 }

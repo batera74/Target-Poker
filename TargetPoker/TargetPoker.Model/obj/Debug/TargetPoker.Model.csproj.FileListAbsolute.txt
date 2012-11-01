@@ -1,0 +1,9 @@
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargetPoker.Model\bin\Debug\TargetPoker.Model.dll
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargetPoker.Model\bin\Debug\TargetPoker.Model.pdb
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargetPoker.Model\obj\Debug\TargetPoker.Model.dll
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargetPoker.Model\obj\Debug\TargetPoker.Model.pdb
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Model\obj\Debug\TargetPoker.Model.dll
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Model\obj\Debug\TargetPoker.Model.pdb
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Model\bin\Debug\TargetPoker.Model.dll
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Model\bin\Debug\TargetPoker.Model.pdb
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Model\obj\Debug\TargetPoker.Model.csprojResolveAssemblyReference.cache

@@ -1,8 +1,0 @@
-C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Negocio\bin\Debug\TargetPoker.Negocio.dll
-C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Negocio\bin\Debug\TargetPoker.Negocio.pdb
-C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Negocio\obj\Debug\TargetPoker.Negocio.csprojResolveAssemblyReference.cache
-C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Negocio\obj\Debug\TargetPoker.Negocio.dll
-C:\Users\guilhermea\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Negocio\obj\Debug\TargetPoker.Negocio.pdb
-C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Negocio\obj\Debug\TargetPoker.Negocio.csprojResolveAssemblyReference.cache
-C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Negocio\obj\Debug\TargetPoker.Negocio.dll
-C:\Users\GUILHERME\Documents\GitHub\Target-Poker\TargetPoker\TargetPoker.Negocio\obj\Debug\TargetPoker.Negocio.pdb

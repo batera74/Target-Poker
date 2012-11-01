@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TargetPoker.Model;
+using TargetPoker.Control;
 
 namespace TargetPoker.Client
 {
@@ -22,7 +24,19 @@ namespace TargetPoker.Client
             eventos.Add(evento3);
             eventos.Add(evento4);
 
-            rptEventos.DataSource = eventos;*/            
+            rptEventos.DataSource = eventos;*/
+
+            PlayerController playerController = new PlayerController();
+            var x = playerController.GetAllPlayers();
+
+            Model.Player player = new Player();
+            player.Name = "Guilherme";
+            player.Surname = "Andrade";
+            player.TargetTeam = true;
+            player.Email = "guilherme.andrade@outlook.com";
+            player.Birth = DateTime.Now;
+            
+            playerController.SavePlayer(player);
         }
     }
 }

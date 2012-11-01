@@ -1,0 +1,15 @@
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargetPoker.Control\bin\Debug\TargetPoker.Control.dll
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargetPoker.Control\bin\Debug\TargetPoker.Control.pdb
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargetPoker.Control\obj\Debug\TargetPoker.Control.dll
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargetPoker.Control\obj\Debug\TargetPoker.Control.pdb
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Control\obj\Debug\TargetPoker.Control.csprojResolveAssemblyReference.cache
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Control\obj\Debug\TargetPoker.Control.dll
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Control\obj\Debug\TargetPoker.Control.pdb
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Control\bin\Debug\TargetPoker.Control.dll
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Control\bin\Debug\TargetPoker.Control.pdb
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Control\bin\Debug\TargerPoker.Data.dll
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Control\bin\Debug\TargetPoker.Model.dll
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Control\bin\Debug\EntityFramework.dll
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Control\bin\Debug\TargerPoker.Data.pdb
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Control\bin\Debug\TargetPoker.Model.pdb
+C:\Users\guilhermea\Documents\Visual Studio 2012\Projects\TargetPoker\TargetPoker.Control\bin\Debug\EntityFramework.xml

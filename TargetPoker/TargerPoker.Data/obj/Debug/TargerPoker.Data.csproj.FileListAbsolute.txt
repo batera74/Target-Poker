@@ -1,0 +1,9 @@
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargerPoker.Data\bin\Debug\TargerPoker.Data.dll
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargerPoker.Data\bin\Debug\TargerPoker.Data.pdb
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargerPoker.Data\obj\Debug\TargerPoker.Data.csprojResolveAssemblyReference.cache
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargerPoker.Data\obj\Debug\TargerPoker.Data.dll
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargerPoker.Data\obj\Debug\TargerPoker.Data.pdb
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargerPoker.Data\bin\Debug\EntityFramework.dll
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargerPoker.Data\bin\Debug\TargetPoker.Model.dll
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargerPoker.Data\bin\Debug\TargetPoker.Model.pdb
+c:\users\guilherme\documents\visual studio 2012\Projects\TargetPoker\TargerPoker.Data\bin\Debug\EntityFramework.xml
